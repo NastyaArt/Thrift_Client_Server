@@ -9,7 +9,9 @@ import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TProtocol;
 import org.apache.thrift.transport.TSocket;
 import org.apache.thrift.transport.TTransport;
-import server.MultiplicationService;
+import server.Inventory;
+
+import java.util.List;
 
 public class Controller {
     public Button btnAdd;
@@ -24,8 +26,10 @@ public class Controller {
     }
 
     public void Add(ActionEvent actionEvent) {
-        int x = client.multiple(6,9);
-        btnAdd.setText(Integer.toString(x));
+        List<Inventory> list = client.getInventory();
+        btnAdd.setText(list.get(1).getName());
+//        int x = client.multiple(6,9);
+//        btnAdd.setText(Integer.toString(x));
     }
 
     public void Delete(ActionEvent actionEvent) {
