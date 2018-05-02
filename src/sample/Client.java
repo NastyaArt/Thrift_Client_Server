@@ -1,6 +1,10 @@
 package sample;
 
 import server.Equipment;
+import server.Cabinet;
+import server.Responsible;
+import server.Distribution;
+import server.Writeoff;
 import server.MySQLServiceEquipment;
 import org.apache.thrift.TException;
 import org.apache.thrift.transport.TTransport;
@@ -39,6 +43,49 @@ public class Client {
         return list;
     }
 
+    public List<Cabinet> getCabinet()
+    {
+        List<Cabinet> list = new ArrayList<Cabinet>();
+        try{
+            list = client.getCabinet();
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+        return list;
+    }
+
+    public List<Responsible> getResponsible()
+    {
+        List<Responsible> list = new ArrayList<Responsible>();
+        try{
+            list = client.getResponsible();
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+        return list;
+    }
+
+    public List<Distribution> getDistribution()
+    {
+        List<Distribution> list = new ArrayList<Distribution>();
+        try{
+            list = client.getDistribution();
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+        return list;
+    }
+
+    public List<Writeoff> getWriteoff()
+    {
+        List<Writeoff> list = new ArrayList<Writeoff>();
+        try{
+            list = client.getWriteoff();
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+        return list;
+    }
     public void close(){
         transport.close();
         System.out.println("Connection closed");

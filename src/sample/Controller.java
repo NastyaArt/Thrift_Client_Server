@@ -5,6 +5,10 @@ import javafx.event.*;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import server.Equipment;
+import server.Cabinet;
+import server.Responsible;
+import server.Distribution;
+import server.Writeoff;
 
 import java.util.List;
 
@@ -18,6 +22,11 @@ public class Controller {
     public void initialize() {
         client = new Client();
         client.connect();
+        List<Equipment> listEquipment = client.getEquipment();
+        List<Cabinet> listCabinet = client.getCabinet();
+        List<Responsible> listResponsible = client.getResponsible();
+        List<Distribution> listDistribution = client.getDistribution();
+        List<Writeoff> listWriteoff = client.getWriteoff();
     }
 
     public void Add(ActionEvent actionEvent) {

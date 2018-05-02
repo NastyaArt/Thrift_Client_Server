@@ -140,7 +140,6 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
             closeConnection();
         }
 
-
         return list;
     }
 
