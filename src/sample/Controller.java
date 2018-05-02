@@ -4,12 +4,7 @@ import javafx.fxml.FXML;
 import javafx.event.*;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
-import org.apache.thrift.TException;
-import org.apache.thrift.protocol.TBinaryProtocol;
-import org.apache.thrift.protocol.TProtocol;
-import org.apache.thrift.transport.TSocket;
-import org.apache.thrift.transport.TTransport;
-import server.Inventory;
+import server.Equipment;
 
 import java.util.List;
 
@@ -26,10 +21,8 @@ public class Controller {
     }
 
     public void Add(ActionEvent actionEvent) {
-        List<Inventory> list = client.getInventory();
+        List<Equipment> list = client.getEquipment();
         btnAdd.setText(list.get(1).getName());
-//        int x = client.multiple(6,9);
-//        btnAdd.setText(Integer.toString(x));
     }
 
     public void Delete(ActionEvent actionEvent) {

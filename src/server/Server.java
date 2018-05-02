@@ -8,14 +8,14 @@ import org.apache.thrift.transport.TServerTransport;
 
 public class Server {
 
-    public static MySQLServiceStockImpl handler;
+    public static MySQLServiceEquipmentImpl handler;
 
-    public static MySQLServiceStock.Processor processor;
+    public static MySQLServiceEquipment.Processor processor;
 
     public static void main(String [] args) {
         try {
-            handler = new MySQLServiceStockImpl();
-            processor = new MySQLServiceStock.Processor(handler);
+            handler = new MySQLServiceEquipmentImpl();
+            processor = new MySQLServiceEquipment.Processor(handler);
 
             Runnable simple = new Runnable() {
                 public void run() {
@@ -29,7 +29,7 @@ public class Server {
         }
     }
 
-    public static void simple(MySQLServiceStock.Processor processor) {
+    public static void simple(MySQLServiceEquipment.Processor processor) {
         try {
             TServerTransport serverTransport = new TServerSocket(9090);
             TServer server = new TSimpleServer(new Args(serverTransport).processor(processor));

@@ -2,50 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/server/Inventory.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/server/MySQLConnector.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/server/MySQLServiceStock.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/server/MySQLServiceStockImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/server/Purchase.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/server/Sales.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/server/Stock.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/server/MySQLServiceEquipmentImpl.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Lab2.iml" afterPath="$PROJECT_DIR$/Lab2.iml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/sample/Client.class" afterPath="$PROJECT_DIR$/out/production/Lab2/sample/Client.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/sample/Controller.class" afterPath="$PROJECT_DIR$/out/production/Lab2/sample/Controller.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$AsyncClient$Factory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$AsyncClient$multiply_call.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$AsyncClient.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$AsyncIface.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$AsyncProcessor$multiply$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$AsyncProcessor$multiply.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$AsyncProcessor.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$Client$Factory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$Client.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$Iface.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$Processor$multiply.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$Processor.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$multiply_args$_Fields.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$multiply_args$multiply_argsStandardScheme.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$multiply_args$multiply_argsStandardSchemeFactory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$multiply_args$multiply_argsTupleScheme.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$multiply_args$multiply_argsTupleSchemeFactory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$multiply_args.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$multiply_result$_Fields.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$multiply_result$multiply_resultStandardScheme.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$multiply_result$multiply_resultStandardSchemeFactory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$multiply_result$multiply_resultTupleScheme.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$multiply_result$multiply_resultTupleSchemeFactory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService$multiply_result.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/MultiplicationService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/Server$1.class" afterPath="$PROJECT_DIR$/out/production/Lab2/server/Server$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab2/server/Server.class" afterPath="$PROJECT_DIR$/out/production/Lab2/server/Server.class" />
       <change beforePath="$PROJECT_DIR$/src/sample/Client.java" afterPath="$PROJECT_DIR$/src/sample/Client.java" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" afterPath="$PROJECT_DIR$/src/sample/Controller.java" />
-      <change beforePath="$PROJECT_DIR$/src/server/MultiplicationHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/server/MultiplicationService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/server/MySQLServiceStockImpl.java" afterPath="$PROJECT_DIR$/src/server/MySQLServiceStockImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/server/Server.java" afterPath="$PROJECT_DIR$/src/server/Server.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -107,47 +68,23 @@
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="38" />
+            <state relative-caret-position="20">
+              <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#942#953#0" expanded="true" />
+                <element signature="e#954#965#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MySQLServiceStock.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/MySQLServiceStock.java">
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+            <state relative-caret-position="580">
+              <caret line="31" column="51" lean-forward="false" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
               <folding>
-                <marker date="1524586152802" expanded="true" signature="158:334" ph="@{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TServiceClient.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../Apache Thrift/libthrift-0.11.0.jar!/org/apache/thrift/TServiceClient.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding>
-                <marker date="1523270830000" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1523270830000" expanded="false" signature="141:222" ph="..." />
-                <marker date="1523270830000" expanded="false" signature="395:406" ph=" { " />
-                <marker date="1523270830000" expanded="false" signature="423:429" ph=" }" />
-                <marker date="1523270830000" expanded="true" signature="491:556" ph="{...}" />
-                <marker date="1523270830000" expanded="false" signature="597:608" ph=" { " />
-                <marker date="1523270830000" expanded="false" signature="627:633" ph=" }" />
-                <marker date="1523270830000" expanded="false" signature="675:686" ph=" { " />
-                <marker date="1523270830000" expanded="false" signature="705:711" ph=" }" />
-                <marker date="1523270830000" expanded="true" signature="796:853" ph="{...}" />
-                <marker date="1523270830000" expanded="true" signature="944:1001" ph="{...}" />
-                <marker date="1523270830000" expanded="true" signature="1095:1304" ph="{...}" />
-                <marker date="1523270830000" expanded="true" signature="1394:1964" ph="{...}" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,55 +93,96 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="50" />
+            <state relative-caret-position="280">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1015#1016#0" expanded="true" />
-                <element signature="e#1045#1046#0" expanded="true" />
+                <element signature="e#704#705#0" expanded="true" />
+                <element signature="e#734#735#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ClientView.java">
+      <file leaf-file-name="MySQLServiceEquipmentImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/MySQLServiceEquipmentImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="740">
+              <caret line="37" column="91" lean-forward="true" selection-start-line="37" selection-start-column="91" selection-end-line="37" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#764#765#0" expanded="true" />
+                <element signature="e#705#716#0" expanded="true" />
+                <element signature="e#1568#1577#0" expanded="true" />
+                <element signature="e#1737#1750#0" expanded="true" />
+                <element signature="e#1921#1935#0" expanded="true" />
+                <element signature="e#2094#2104#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/server/Server.java">
+      <file leaf-file-name="Distribution.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/Distribution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="31" column="47" lean-forward="false" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+            <state relative-caret-position="80">
+              <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1525268227404" expanded="true" signature="158:336" ph="@{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MySQLServiceStockImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/MySQLServiceStockImpl.java">
+      <file leaf-file-name="Equipment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/Equipment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="80">
+              <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#682#689#0" expanded="true" />
-                <element signature="e#841#852#0" expanded="true" />
-                <element signature="e#1493#1503#0" expanded="true" />
-                <element signature="e#1653#1660#0" expanded="true" />
+                <marker date="1525268227461" expanded="true" signature="158:334" ph="@{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MySQLServiceEquipment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/MySQLServiceEquipment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+              <folding>
+                <marker date="1525267706775" expanded="true" signature="158:334" ph="@{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Responsible.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/Responsible.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cabinet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server/Cabinet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Writeoff.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/server/Writeoff.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -245,11 +223,18 @@
         <option value="$PROJECT_DIR$/src/server/Sales.java" />
         <option value="$PROJECT_DIR$/src/server/Stock.java" />
         <option value="$PROJECT_DIR$/src/server/MultiplicationHandler.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/server/MySQLConnector.java" />
         <option value="$PROJECT_DIR$/src/server/MySQLServiceStockImpl.java" />
-        <option value="$PROJECT_DIR$/src/sample/Client.java" />
+        <option value="$PROJECT_DIR$/src/server/MySQLServiceEquipment.java" />
         <option value="$PROJECT_DIR$/src/server/Server.java" />
+        <option value="$PROJECT_DIR$/src/sample/Client.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/server/MySQLServiceEquipmentImpl.java" />
+        <option value="$PROJECT_DIR$/src/server/Distribution.java" />
+        <option value="$PROJECT_DIR$/src/server/Equipment.java" />
+        <option value="$PROJECT_DIR$/src/server/Responsible.java" />
+        <option value="$PROJECT_DIR$/src/server/Cabinet.java" />
+        <option value="$PROJECT_DIR$/src/server/Writeoff.java" />
       </list>
     </option>
   </component>
@@ -281,9 +266,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -312,7 +297,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -603,12 +588,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.352459" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.352459" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2655068" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26928896" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -638,13 +623,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/server/MySQLServiceStock.java</url>
-          <line>129</line>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
@@ -660,6 +638,7 @@
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#954#965#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -670,8 +649,8 @@
           <caret line="39" column="1" lean-forward="false" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -681,58 +660,37 @@
         <state relative-caret-position="280">
           <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#736#737#0" expanded="false" />
+            <element signature="e#764#765#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/MySQLConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="50" column="49" lean-forward="false" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/MySQLConnector.java" />
     <entry file="file://$PROJECT_DIR$/src/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="36" column="47" lean-forward="true" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/MultiplicationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/MultiplicationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="73" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/MultiplicationService.java" />
+    <entry file="file://$PROJECT_DIR$/src/server/MultiplicationHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/server/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -747,6 +705,7 @@
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#954#965#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -757,8 +716,8 @@
           <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -768,38 +727,32 @@
         <state relative-caret-position="280">
           <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#736#737#0" expanded="false" />
+            <element signature="e#764#765#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/MultiplicationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/MultiplicationService.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#954#965#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -810,34 +763,34 @@
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
@@ -846,8 +799,8 @@
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -876,32 +829,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Apache Thrift/gen-java/Inventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-780">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Apache Thrift/gen-java/Inventory.java" />
     <entry file="file://$PROJECT_DIR$/src/server/InventoryImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/Sales.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <marker date="1524586177187" expanded="true" signature="158:334" ph="@{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -921,32 +866,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/MySQLConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="45" column="35" lean-forward="false" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/MultiplicationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/MultiplicationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/MySQLConnector.java" />
+    <entry file="file://$PROJECT_DIR$/src/server/MultiplicationHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/server/MultiplicationService.java" />
     <entry file="file://$PROJECT_DIR$/src/server/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3020">
@@ -955,60 +877,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#942#953#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../Apache Thrift/libthrift-0.11.0.jar!/org/apache/thrift/TServiceClient.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <marker date="1523270830000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1523270830000" expanded="false" signature="141:222" ph="..." />
-            <marker date="1523270830000" expanded="false" signature="395:406" ph=" { " />
-            <marker date="1523270830000" expanded="false" signature="423:429" ph=" }" />
-            <marker date="1523270830000" expanded="true" signature="491:556" ph="{...}" />
-            <marker date="1523270830000" expanded="false" signature="597:608" ph=" { " />
-            <marker date="1523270830000" expanded="false" signature="627:633" ph=" }" />
-            <marker date="1523270830000" expanded="false" signature="675:686" ph=" { " />
-            <marker date="1523270830000" expanded="false" signature="705:711" ph=" }" />
-            <marker date="1523270830000" expanded="true" signature="796:853" ph="{...}" />
-            <marker date="1523270830000" expanded="true" signature="944:1001" ph="{...}" />
-            <marker date="1523270830000" expanded="true" signature="1095:1304" ph="{...}" />
-            <marker date="1523270830000" expanded="true" signature="1394:1964" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ClientView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,33 +888,129 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding>
-            <marker date="1524586152802" expanded="true" signature="158:334" ph="@{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/MySQLServiceStockImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/ClientView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="34" />
+        <state relative-caret-position="302">
+          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#682#689#0" expanded="true" />
-            <element signature="e#841#852#0" expanded="true" />
-            <element signature="e#1493#1503#0" expanded="true" />
-            <element signature="e#1653#1660#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#736#737#0" expanded="false" />
+            <element signature="e#764#765#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="31" column="47" lean-forward="false" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+        <state relative-caret-position="580">
+          <caret line="31" column="51" lean-forward="false" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/MySQLServiceStockImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#954#965#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/MySQLServiceEquipmentImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="37" column="91" lean-forward="true" selection-start-line="37" selection-start-column="91" selection-end-line="37" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#705#716#0" expanded="true" />
+            <element signature="e#1568#1577#0" expanded="true" />
+            <element signature="e#1737#1750#0" expanded="true" />
+            <element signature="e#1921#1935#0" expanded="true" />
+            <element signature="e#2094#2104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Distribution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <marker date="1525268227404" expanded="true" signature="158:336" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Equipment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding>
+            <marker date="1525268227461" expanded="true" signature="158:334" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/MySQLServiceEquipment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <folding>
+            <marker date="1525267706775" expanded="true" signature="158:334" ph="@{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Responsible.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Cabinet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Writeoff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
