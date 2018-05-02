@@ -50,6 +50,21 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
     public List<Cabinet> getCabinet() throws TException {
         List<Cabinet> list = new ArrayList<Cabinet>();
 
+        String query = "select * from cabinet";
+        sendSelectRequest(query);
+        try {
+            while (rs.next()) {
+                int code = rs.getInt("code");
+                String name = rs.getString("name");
+                int codeResponsible = rs.getInt("codeResponsible");
+
+                list.add(new Cabinet(code, name, codeResponsible));
+            }
+        } catch (SQLException sqlEx) {
+            sqlEx.printStackTrace();
+        } finally {
+            closeConnection();
+        }
 
         return list;
     }
@@ -57,18 +72,75 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
     @Override
     public List<Responsible> getResponsible() throws TException {
         List<Responsible> list = new ArrayList<Responsible>();
+
+        String query = "select * from responsible";
+        sendSelectRequest(query);
+        try {
+            while (rs.next()) {
+                int code = rs.getInt("code");
+                String fio = rs.getString("fio");
+                String phone = rs.getString("phone");
+
+                list.add(new Responsible(code, fio, phone));
+            }
+        } catch (SQLException sqlEx) {
+            sqlEx.printStackTrace();
+        } finally {
+            closeConnection();
+        }
+
         return list;
     }
 
     @Override
     public java.util.List<Distribution> getDistribution() throws TException {
         List<Distribution> list = new ArrayList<Distribution>();
+
+        String query = "select * from distribution";
+        sendSelectRequest(query);
+        try {
+            while (rs.next()) {
+                int code = rs.getInt("code");
+                int codeCabinet = rs.getInt("codeCabinet");
+                int codeEquipment = rs.getInt("codeEquipment");
+                int number = rs.getInt("number");
+                String date = rs.getString("date");
+
+                list.add(new Distribution(code, codeCabinet, codeEquipment, number, date));
+            }
+        } catch (SQLException sqlEx) {
+            sqlEx.printStackTrace();
+        } finally {
+            closeConnection();
+        }
+
         return list;
     }
 
     @Override
     public java.util.List<Writeoff> getWriteoff() throws TException {
         List<Writeoff> list = new ArrayList<Writeoff>();
+
+        String query = "select * from writeoff";
+        sendSelectRequest(query);
+        try {
+            while (rs.next()) {
+                int code = rs.getInt("code");
+                int codeCabinet = rs.getInt("codeCabinet");
+                int codeEquipment = rs.getInt("codeEquipment");
+                int number = rs.getInt("number");
+                String date = rs.getString("date");
+                String cause = rs.getString("cause");
+
+                list.add(new Writeoff(code, codeCabinet, codeEquipment, number, date, cause));
+            }
+        } catch (SQLException sqlEx) {
+            sqlEx.printStackTrace();
+        } finally {
+            closeConnection();
+        }
+
+
         return list;
     }
 
