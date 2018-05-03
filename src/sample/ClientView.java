@@ -12,7 +12,6 @@ public class ClientView  extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
         Parent root = loader.load();
         Controller controller = loader.getController();
-//        System.out.println(controller.getName());
         primaryStage.setOnHidden(e -> controller.exit());
         primaryStage.setTitle("Client");
         primaryStage.setScene(new Scene(root));

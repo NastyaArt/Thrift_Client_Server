@@ -86,6 +86,16 @@ public class Client {
         }
         return list;
     }
+
+    public void addEquipment(Equipment eq)
+    {
+        try{
+            client.addEquipment(eq);
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+    }
+
     public void close(){
         transport.close();
         System.out.println("Connection closed");

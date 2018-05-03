@@ -5,7 +5,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.Node;
 import javafx.stage.Stage;
-import javafx.stage.Modality;
 import javafx.fxml.FXML;
 import javafx.event.*;
 import javafx.scene.control.*;
@@ -50,13 +49,26 @@ public class Controller {
     }
 
     public void EditEquipment(ActionEvent actionEvent) throws Exception {
+        FXMLLoader loader = new FXMLLoader(EquipmentEdit.class.getResource("EquipmentEdit.fxml"));
+        Parent root = loader.load();
+        EquipmentEdit controller = loader.getController();
+        controller.setClient(client);
+//        System.out.println(controller.getName());
+//        primaryStage.setOnHidden(e -> controller.exit());
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(EquipmentEdit.class.getResource("EquipmentEdit.fxml"));
+        stage.setOnHidden(e -> updateEquipment());
+//        Parent root = FXMLLoader.load(EquipmentEdit.class.getResource("EquipmentEdit.fxml"));
         stage.setScene(new Scene(root));
         stage.setTitle("Equipment Edit");
         stage.setResizable(false);
         stage.initOwner(((Node)actionEvent.getSource()).getScene().getWindow());
         stage.show();
+    }
+
+    private void updateEquipment(){
+        List<Equipment> listEquipment = client.getEquipment();
+        ObservableList<Equipment> dataEquipment = FXCollections.observableArrayList(listEquipment);
+        tableEquipment.setItems(dataEquipment);
     }
 
     public void EditCabinet(ActionEvent actionEvent) throws Exception {

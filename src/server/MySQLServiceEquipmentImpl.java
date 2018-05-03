@@ -145,6 +145,15 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
 
     @Override
     public void addEquipment(Equipment equipment) throws TException {
+        String query = "INSERT INTO equipment.equipment (code, category, name, cost, producer, receiptDate)\n" +
+                " VALUES (" + equipment.getCode() + ", '" +
+                equipment.getCategory() + "', '" +
+                equipment.getName() + "', " +
+                equipment.getCost() + ", '" +
+                equipment.getProducer() + "', '" +
+                equipment.getReceiptDate() +
+                "');";
+        sendRequest(query);
     }
 
     @Override
@@ -219,7 +228,7 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
         try {
             con = DriverManager.getConnection(url, user, password);
             stmt = con.createStatement();
-            stmt.executeQuery(query);
+            stmt.executeUpdate(query);
 
         } catch (SQLException sqlEx) {
             sqlEx.printStackTrace();
