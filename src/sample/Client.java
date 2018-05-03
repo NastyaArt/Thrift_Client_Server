@@ -96,6 +96,132 @@ public class Client {
         }
     }
 
+    public void addCabinet(Cabinet cab)
+    {
+        try{
+            client.addCabinet(cab);
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+    }
+
+    public void addResponsible(Responsible resp)
+    {
+        try{
+            client.addResponsible(resp);
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+    }
+
+    public void addDistribution(Distribution dist)
+    {
+        try{
+            client.addDistribution(dist);
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+    }
+
+    public void addWriteoff(Writeoff wr)
+    {
+        try{
+            client.addWriteoff(wr);
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+    }
+
+    public void delEquipment(Equipment eq)
+    {
+        try{
+            client.addEquipment(eq);
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+    }
+
+    public void delCabinet(Cabinet cab)
+    {
+        try{
+            client.addCabinet(cab);
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+    }
+
+    public void delResponsible(Responsible resp)
+    {
+        try{
+            client.delResponsible(resp);
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+    }
+
+    public void delDistribution(Distribution dist)
+    {
+        try{
+            client.delDistribution(dist);
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+    }
+
+    public void delWriteoff(Writeoff wr)
+    {
+        try{
+            client.delWriteoff(wr);
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+    }
+
+    public void editEquipment(Equipment eq)
+    {
+        try{
+            client.addEquipment(eq);
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+    }
+
+    public void editCabinet(Cabinet cab)
+    {
+        try{
+            client.addCabinet(cab);
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+    }
+
+    public void editResponsible(Responsible resp)
+    {
+        try{
+            client.addResponsible(resp);
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+    }
+
+    public void editDistribution(Distribution dist)
+    {
+        try{
+            client.addDistribution(dist);
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+    }
+
+    public void editWriteoff(Writeoff wr)
+    {
+        try{
+            client.addWriteoff(wr);
+        } catch (TException x) {
+            x.printStackTrace();
+        }
+    }
+
     public void close(){
         transport.close();
         System.out.println("Connection closed");

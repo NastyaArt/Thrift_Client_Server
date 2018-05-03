@@ -158,18 +158,47 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
 
     @Override
     public void addCabinet(Cabinet cabinet) throws TException {
+        String query = "INSERT INTO equipment.equipment (code, name, codeResponsible)\n" +
+                " VALUES (" + cabinet.getCode() + ", '" +
+                cabinet.getName() + "', " +
+                cabinet.getCodeResponsible() +
+                ");";
+        sendRequest(query);
     }
 
     @Override
     public void addResponsible(Responsible responsible) throws TException {
+        String query = "INSERT INTO equipment.equipment (code, fio, phone)\n" +
+                " VALUES (" + responsible.getCode() + ", '" +
+                responsible.getFio() + "', '" +
+                responsible.getPhone() +
+                "');";
+        sendRequest(query);
     }
 
     @Override
     public void addDistribution(Distribution distribution) throws TException {
+        String query = "INSERT INTO equipment.equipment (code, codeCabinet, codeEquipment, number, date)\n" +
+                " VALUES (" + distribution.getCode() + ", " +
+                distribution.getCodeCabinet() + ", " +
+                distribution.getCodeEquipment() + ", " +
+                distribution.getNumber() + ", '" +
+                distribution.getDate() +
+                "');";
+        sendRequest(query);
     }
 
     @Override
     public void addWriteoff(Writeoff writeoff) throws TException {
+        String query = "INSERT INTO equipment.equipment (code, codeCabinet, codeEquipment, number, date, cause)\n" +
+                " VALUES (" + writeoff.getCode() + ", " +
+                writeoff.getCodeCabinet() + ", " +
+                writeoff.getCodeEquipment() + ", " +
+                writeoff.getNumber() + ", '" +
+                writeoff.getDate() + "', '" +
+                writeoff.getCause() +
+                "');";
+        sendRequest(query);
     }
 
     @Override
