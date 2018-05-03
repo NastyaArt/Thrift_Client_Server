@@ -30,20 +30,40 @@ public class Controller {
     public void initialize() {
         client = new Client();
         client.connect();
-        List<Equipment> listEquipment = client.getEquipment();
-        List<Cabinet> listCabinet = client.getCabinet();
-        List<Responsible> listResponsible = client.getResponsible();
-        List<Distribution> listDistribution = client.getDistribution();
-        List<Writeoff> listWriteoff = client.getWriteoff();
 
+        updateEquipment();
+        updateCabinet();
+        updateResponsible();
+        updateDistribution();
+        updateWriteoff();
+    }
+
+    private void updateEquipment(){
+        List<Equipment> listEquipment = client.getEquipment();
         ObservableList<Equipment> dataEquipment = FXCollections.observableArrayList(listEquipment);
         tableEquipment.setItems(dataEquipment);
+    }
+
+    private void updateCabinet(){
+        List<Cabinet> listCabinet = client.getCabinet();
         ObservableList<Cabinet> dataCabinet = FXCollections.observableArrayList(listCabinet);
         tableCabinet.setItems(dataCabinet);
+    }
+
+    private void updateResponsible(){
+        List<Responsible> listResponsible = client.getResponsible();
         ObservableList<Responsible> dataResponsible = FXCollections.observableArrayList(listResponsible);
         tableResponsible.setItems(dataResponsible);
+    }
+
+    private void updateDistribution(){
+        List<Distribution> listDistribution = client.getDistribution();
         ObservableList<Distribution> dataDistribution = FXCollections.observableArrayList(listDistribution);
         tableDistribution.setItems(dataDistribution);
+    }
+
+    private void updateWriteoff(){
+        List<Writeoff> listWriteoff = client.getWriteoff();
         ObservableList<Writeoff> dataWriteoff = FXCollections.observableArrayList(listWriteoff);
         tableWriteoff.setItems(dataWriteoff);
     }
@@ -62,22 +82,60 @@ public class Controller {
         stage.show();
     }
 
-    private void updateEquipment(){
-        List<Equipment> listEquipment = client.getEquipment();
-        ObservableList<Equipment> dataEquipment = FXCollections.observableArrayList(listEquipment);
-        tableEquipment.setItems(dataEquipment);
-    }
-
     public void EditCabinet(ActionEvent actionEvent) throws Exception {
+        FXMLLoader loader = new FXMLLoader(CabinetEdit.class.getResource("CabinetEdit.fxml"));
+        Parent root = loader.load();
+        CabinetEdit controller = loader.getController();
+        controller.setClient(client);
+        Stage stage = new Stage();
+        stage.setOnHidden(e -> updateCabinet());
+        stage.setScene(new Scene(root));
+        stage.setTitle("Cabinet Edit");
+        stage.setResizable(false);
+        stage.initOwner(((Node)actionEvent.getSource()).getScene().getWindow());
+        stage.show();
     }
 
     public void EditResponsible(ActionEvent actionEvent) throws Exception {
+        FXMLLoader loader = new FXMLLoader(ResponsibleEdit.class.getResource("ResponsibleEdit.fxml"));
+        Parent root = loader.load();
+        ResponsibleEdit controller = loader.getController();
+        controller.setClient(client);
+        Stage stage = new Stage();
+        stage.setOnHidden(e -> updateResponsible());
+        stage.setScene(new Scene(root));
+        stage.setTitle("Responsible Edit");
+        stage.setResizable(false);
+        stage.initOwner(((Node)actionEvent.getSource()).getScene().getWindow());
+        stage.show();
     }
 
     public void EditDistribution(ActionEvent actionEvent) throws Exception {
+        FXMLLoader loader = new FXMLLoader(DistributionEdit.class.getResource("DistributionEdit.fxml"));
+        Parent root = loader.load();
+        DistributionEdit controller = loader.getController();
+        controller.setClient(client);
+        Stage stage = new Stage();
+        stage.setOnHidden(e -> updateDistribution());
+        stage.setScene(new Scene(root));
+        stage.setTitle("Distribution Edit");
+        stage.setResizable(false);
+        stage.initOwner(((Node)actionEvent.getSource()).getScene().getWindow());
+        stage.show();
     }
 
     public void EditWriteoff(ActionEvent actionEvent) throws Exception {
+        FXMLLoader loader = new FXMLLoader(WriteoffEdit.class.getResource("WriteoffEdit.fxml"));
+        Parent root = loader.load();
+        WriteoffEdit controller = loader.getController();
+        controller.setClient(client);
+        Stage stage = new Stage();
+        stage.setOnHidden(e -> updateWriteoff());
+        stage.setScene(new Scene(root));
+        stage.setTitle("Writeoff Edit");
+        stage.setResizable(false);
+        stage.initOwner(((Node)actionEvent.getSource()).getScene().getWindow());
+        stage.show();
     }
 
     public void exit() {
