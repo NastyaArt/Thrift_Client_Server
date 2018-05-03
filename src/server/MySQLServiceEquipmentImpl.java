@@ -209,18 +209,26 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
 
     @Override
     public void delCabinet(int code) throws TException {
+        String query = "delete from cabinet where code = " + code + ";";
+        sendRequest(query);
     }
 
     @Override
     public void delResponsible(int code) throws TException {
+        String query = "delete from responsible where code = " + code + ";";
+        sendRequest(query);
     }
 
     @Override
     public void delDistribution(int code) throws TException {
+        String query = "delete from distribution where code = " + code + ";";
+        sendRequest(query);
     }
 
     @Override
     public void delWriteoff(int code) throws TException {
+        String query = "delete from writeoff where code = " + code + ";";
+        sendRequest(query);
     }
 
     @Override
