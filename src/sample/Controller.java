@@ -1,5 +1,11 @@
 package sample;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.Node;
+import javafx.stage.Stage;
+import javafx.stage.Modality;
 import javafx.fxml.FXML;
 import javafx.event.*;
 import javafx.scene.control.*;
@@ -10,13 +16,9 @@ import server.Cabinet;
 import server.Responsible;
 import server.Distribution;
 import server.Writeoff;
-
 import java.util.List;
 
 public class Controller {
-    public Button btnAdd;
-    public Button btnDel;
-    public Button btnEdit;
     public TableView<Equipment> tableEquipment;
     public TableView<Cabinet> tableCabinet;
     public TableView<Responsible> tableResponsible;
@@ -45,17 +47,28 @@ public class Controller {
         tableDistribution.setItems(dataDistribution);
         ObservableList<Writeoff> dataWriteoff = FXCollections.observableArrayList(listWriteoff);
         tableWriteoff.setItems(dataWriteoff);
-
     }
 
-    public void Add(ActionEvent actionEvent) {
-        
+    public void EditEquipment(ActionEvent actionEvent) throws Exception {
+        Stage stage = new Stage();
+        Parent root = FXMLLoader.load(EquipmentEdit.class.getResource("EquipmentEdit.fxml"));
+        stage.setScene(new Scene(root));
+        stage.setTitle("Equipment Edit");
+        stage.setResizable(false);
+        stage.initOwner(((Node)actionEvent.getSource()).getScene().getWindow());
+        stage.show();
     }
 
-    public void Delete(ActionEvent actionEvent) {
+    public void EditCabinet(ActionEvent actionEvent) throws Exception {
     }
 
-    public void Edit(ActionEvent actionEvent) {
+    public void EditResponsible(ActionEvent actionEvent) throws Exception {
+    }
+
+    public void EditDistribution(ActionEvent actionEvent) throws Exception {
+    }
+
+    public void EditWriteoff(ActionEvent actionEvent) throws Exception {
     }
 
     public void exit() {

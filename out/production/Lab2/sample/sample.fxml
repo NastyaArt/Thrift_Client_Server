@@ -2,14 +2,6 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.control.cell.*?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
-<?import javafx.collections.*?>
-<?import server.Equipment?>
-<?import server.Cabinet?>
-<?import server.Responsible?>
-<?import server.Distribution?>
-<?import server.Writeoff?>
 
 <GridPane fx:controller="sample.Controller"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
@@ -169,11 +161,13 @@
                 </TableView>
             </Tab>
         </TabPane>
-        <TitledPane collapsible="false" text="Commands">
+        <TitledPane collapsible="false" text="Add / Delete / Edit">
             <VBox spacing="10">
-                <Button fx:id="btnAdd" text="Add" onAction="#Add"/>
-                <Button fx:id="btnDel" text="Delete" onAction="#Delete"/>
-                <Button fx:id="btnEdit" text="Edit" onAction="#Edit"/>
+                <Button fx:id="btnEquipment" text="Equipment" onAction="#EditEquipment"/>
+                <Button fx:id="btnCabinet" text="Cabinet" onAction="#EditCabinet"/>
+                <Button fx:id="btnResponsible" text="Responsible" onAction="#EditResponsible"/>
+                <Button fx:id="btnDistribution" text="Distribution" onAction="#EditDistribution"/>
+                <Button fx:id="btnWriteoff" text="Writeoff" onAction="#EditWriteoff"/>
             </VBox>
         </TitledPane>
     </HBox>
