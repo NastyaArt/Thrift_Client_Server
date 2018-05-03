@@ -14,6 +14,8 @@ public class EquipmentEdit {
     public TextField producerAdd;
     public TextField receiptDateAdd;
 
+    public TextField codeDel;
+
     private Client client;
 
     @FXML
@@ -34,6 +36,7 @@ public class EquipmentEdit {
     }
 
     public void Delete(ActionEvent actionEvent) {
+        client.delEquipment(Integer.parseInt(codeDel.getText()));
     }
 
     public void Edit(ActionEvent actionEvent) {

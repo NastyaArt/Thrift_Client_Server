@@ -53,11 +53,8 @@ public class Controller {
         Parent root = loader.load();
         EquipmentEdit controller = loader.getController();
         controller.setClient(client);
-//        System.out.println(controller.getName());
-//        primaryStage.setOnHidden(e -> controller.exit());
         Stage stage = new Stage();
         stage.setOnHidden(e -> updateEquipment());
-//        Parent root = FXMLLoader.load(EquipmentEdit.class.getResource("EquipmentEdit.fxml"));
         stage.setScene(new Scene(root));
         stage.setTitle("Equipment Edit");
         stage.setResizable(false);

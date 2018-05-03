@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/sample/Client.java" afterPath="$PROJECT_DIR$/src/sample/Client.java" />
-      <change beforePath="$PROJECT_DIR$/src/server/MySQLServiceEquipment.java" afterPath="$PROJECT_DIR$/src/server/MySQLServiceEquipment.java" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" afterPath="$PROJECT_DIR$/src/sample/Controller.java" />
+      <change beforePath="$PROJECT_DIR$/src/sample/EquipmentEdit.fxml" afterPath="$PROJECT_DIR$/src/sample/EquipmentEdit.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/sample/EquipmentEdit.java" afterPath="$PROJECT_DIR$/src/sample/EquipmentEdit.java" />
       <change beforePath="$PROJECT_DIR$/src/server/MySQLServiceEquipmentImpl.java" afterPath="$PROJECT_DIR$/src/server/MySQLServiceEquipmentImpl.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -62,11 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="153" column="5" lean-forward="true" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1056#1067#0" expanded="true" />
@@ -79,41 +80,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MySQLServiceEquipment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/MySQLServiceEquipment.java">
+      <file leaf-file-name="MySQLServiceEquipmentImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/server/MySQLServiceEquipmentImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-              <folding>
-                <marker date="1525358314332" expanded="true" signature="158:334" ph="@{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="10" />
+            <state relative-caret-position="162">
+              <caret line="205" column="56" lean-forward="false" selection-start-line="205" selection-start-column="56" selection-end-line="205" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3377#3378#0" expanded="true" />
-                <element signature="e#3407#3408#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ClientView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#764#765#0" expanded="true" />
+                <element signature="e#705#716#0" expanded="true" />
+                <element signature="e#1568#1577#0" expanded="true" />
+                <element signature="e#2251#2264#0" expanded="true" />
+                <element signature="e#2932#2946#0" expanded="true" />
+                <element signature="e#3756#3766#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,8 +100,8 @@
       <file leaf-file-name="EquipmentEdit.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/EquipmentEdit.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1480">
-              <caret line="86" column="11" lean-forward="true" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
+            <state relative-caret-position="280">
+              <caret line="53" column="51" lean-forward="false" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -132,18 +110,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MySQLServiceEquipmentImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/MySQLServiceEquipmentImpl.java">
+      <file leaf-file-name="EquipmentEdit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/EquipmentEdit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="220" column="36" lean-forward="false" selection-start-line="220" selection-start-column="36" selection-end-line="220" selection-end-column="36" />
+            <state relative-caret-position="-212">
+              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#705#716#0" expanded="true" />
-                <element signature="e#1568#1577#0" expanded="true" />
-                <element signature="e#2251#2264#0" expanded="true" />
-                <element signature="e#2932#2946#0" expanded="true" />
-                <element signature="e#3756#3766#0" expanded="true" />
+                <element signature="e#1003#1004#0" expanded="true" />
+                <element signature="e#1075#1076#0" expanded="true" />
+                <element signature="e#1169#1170#0" expanded="true" />
+                <element signature="e#1196#1197#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -193,13 +170,13 @@
         <option value="$PROJECT_DIR$/src/server/Cabinet.java" />
         <option value="$PROJECT_DIR$/src/server/Writeoff.java" />
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/EquipmentEdit.fxml" />
         <option value="$PROJECT_DIR$/src/sample/ClientView.java" />
+        <option value="$PROJECT_DIR$/src/server/MySQLServiceEquipment.java" />
+        <option value="$PROJECT_DIR$/src/sample/Client.java" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/EquipmentEdit.java" />
-        <option value="$PROJECT_DIR$/src/server/MySQLServiceEquipment.java" />
+        <option value="$PROJECT_DIR$/src/sample/EquipmentEdit.fxml" />
         <option value="$PROJECT_DIR$/src/server/MySQLServiceEquipmentImpl.java" />
-        <option value="$PROJECT_DIR$/src/sample/Client.java" />
       </list>
     </option>
   </component>
@@ -544,7 +521,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -554,7 +530,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2704918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2704918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -663,8 +639,8 @@
           <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3377#3378#0" expanded="true" />
-            <element signature="e#3407#3408#0" expanded="true" />
+            <element signature="e#3169#3170#0" expanded="true" />
+            <element signature="e#3199#3200#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -714,8 +690,8 @@
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3377#3378#0" expanded="true" />
-            <element signature="e#3407#3408#0" expanded="true" />
+            <element signature="e#3169#3170#0" expanded="true" />
+            <element signature="e#3199#3200#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -750,8 +726,8 @@
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3377#3378#0" expanded="true" />
-            <element signature="e#3407#3408#0" expanded="true" />
+            <element signature="e#3169#3170#0" expanded="true" />
+            <element signature="e#3199#3200#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -896,30 +872,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3377#3378#0" expanded="true" />
-            <element signature="e#3407#3408#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/EquipmentEdit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -931,21 +883,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/EquipmentEdit.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1480">
-          <caret line="86" column="11" lean-forward="true" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/ClientView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#736#737#0" expanded="true" />
@@ -956,7 +897,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/MySQLServiceEquipment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
+        <state relative-caret-position="-220">
           <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
           <folding>
             <marker date="1525358314332" expanded="true" signature="158:334" ph="@{...}" />
@@ -964,25 +905,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/MySQLServiceEquipmentImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="220" column="36" lean-forward="false" selection-start-line="220" selection-start-column="36" selection-end-line="220" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#705#716#0" expanded="true" />
-            <element signature="e#1568#1577#0" expanded="true" />
-            <element signature="e#2251#2264#0" expanded="true" />
-            <element signature="e#2932#2946#0" expanded="true" />
-            <element signature="e#3756#3766#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="153" column="5" lean-forward="true" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1056#1067#0" expanded="true" />
@@ -990,6 +916,58 @@
             <element signature="e#1584#1597#0" expanded="true" />
             <element signature="e#1863#1877#0" expanded="true" />
             <element signature="e#2132#2142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="56" column="50" lean-forward="false" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3169#3170#0" expanded="true" />
+            <element signature="e#3199#3200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/EquipmentEdit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-212">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+            <element signature="e#1169#1170#0" expanded="true" />
+            <element signature="e#1196#1197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/EquipmentEdit.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="53" column="51" lean-forward="false" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/MySQLServiceEquipmentImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="205" column="56" lean-forward="false" selection-start-line="205" selection-start-column="56" selection-end-line="205" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#705#716#0" expanded="true" />
+            <element signature="e#1568#1577#0" expanded="true" />
+            <element signature="e#2251#2264#0" expanded="true" />
+            <element signature="e#2932#2946#0" expanded="true" />
+            <element signature="e#3756#3766#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -145,7 +145,7 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
 
     @Override
     public void addEquipment(Equipment equipment) throws TException {
-        String query = "INSERT INTO equipment.equipment (code, category, name, cost, producer, receiptDate)\n" +
+        String query = "INSERT INTO equipment (code, category, name, cost, producer, receiptDate)\n" +
                 " VALUES (" + equipment.getCode() + ", '" +
                 equipment.getCategory() + "', '" +
                 equipment.getName() + "', " +
@@ -158,7 +158,7 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
 
     @Override
     public void addCabinet(Cabinet cabinet) throws TException {
-        String query = "INSERT INTO equipment.equipment (code, name, codeResponsible)\n" +
+        String query = "INSERT INTO cabinet (code, name, codeResponsible)\n" +
                 " VALUES (" + cabinet.getCode() + ", '" +
                 cabinet.getName() + "', " +
                 cabinet.getCodeResponsible() +
@@ -168,7 +168,7 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
 
     @Override
     public void addResponsible(Responsible responsible) throws TException {
-        String query = "INSERT INTO equipment.equipment (code, fio, phone)\n" +
+        String query = "INSERT INTO responsible (code, fio, phone)\n" +
                 " VALUES (" + responsible.getCode() + ", '" +
                 responsible.getFio() + "', '" +
                 responsible.getPhone() +
@@ -178,7 +178,7 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
 
     @Override
     public void addDistribution(Distribution distribution) throws TException {
-        String query = "INSERT INTO equipment.equipment (code, codeCabinet, codeEquipment, number, date)\n" +
+        String query = "INSERT INTO distribution (code, codeCabinet, codeEquipment, number, date)\n" +
                 " VALUES (" + distribution.getCode() + ", " +
                 distribution.getCodeCabinet() + ", " +
                 distribution.getCodeEquipment() + ", " +
@@ -190,7 +190,7 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
 
     @Override
     public void addWriteoff(Writeoff writeoff) throws TException {
-        String query = "INSERT INTO equipment.equipment (code, codeCabinet, codeEquipment, number, date, cause)\n" +
+        String query = "INSERT INTO writeoff (code, codeCabinet, codeEquipment, number, date, cause)\n" +
                 " VALUES (" + writeoff.getCode() + ", " +
                 writeoff.getCodeCabinet() + ", " +
                 writeoff.getCodeEquipment() + ", " +
@@ -203,6 +203,8 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
 
     @Override
     public void delEquipment(int code) throws TException {
+        String query = "delete from equipment where code = " + code + ";";
+        sendRequest(query);
     }
 
     @Override

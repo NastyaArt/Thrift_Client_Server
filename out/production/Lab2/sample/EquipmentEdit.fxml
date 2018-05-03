@@ -49,9 +49,9 @@
             <VBox spacing="5">
                 <HBox spacing="5">
                     <Label text="Code:"/>
-                    <TextField fx:id="codeDelete" text="11"/>
+                    <TextField fx:id="codeDel" text="11"/>
                 </HBox>
-                <Button text="Delete" fx:id="btnDelete" onAction="#Delete"/>
+                <Button text="Delete" fx:id="btnDel" onAction="#Delete"/>
             </VBox>
         </TitledPane>
         <TitledPane collapsible="false" text="Edit Equipment">
