@@ -202,23 +202,23 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
     }
 
     @Override
-    public void delEquipment(Equipment equipment) throws TException {
+    public void delEquipment(int code) throws TException {
     }
 
     @Override
-    public void delCabinet(Cabinet cabinet) throws TException {
+    public void delCabinet(int code) throws TException {
     }
 
     @Override
-    public void delResponsible(Responsible responsible) throws TException {
+    public void delResponsible(int code) throws TException {
     }
 
     @Override
-    public void delDistribution(Distribution distribution) throws TException {
+    public void delDistribution(int code) throws TException {
     }
 
     @Override
-    public void delWriteoff(Writeoff writeoff) throws TException {
+    public void delWriteoff(int code) throws TException {
     }
 
     @Override

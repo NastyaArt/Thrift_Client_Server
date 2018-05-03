@@ -132,46 +132,46 @@ public class Client {
         }
     }
 
-    public void delEquipment(Equipment eq)
+    public void delEquipment(int code)
     {
         try{
-            client.addEquipment(eq);
+            client.delEquipment(code);
         } catch (TException x) {
             x.printStackTrace();
         }
     }
 
-    public void delCabinet(Cabinet cab)
+    public void delCabinet(int code)
     {
         try{
-            client.addCabinet(cab);
+            client.delCabinet(code);
         } catch (TException x) {
             x.printStackTrace();
         }
     }
 
-    public void delResponsible(Responsible resp)
+    public void delResponsible(int code)
     {
         try{
-            client.delResponsible(resp);
+            client.delResponsible(code);
         } catch (TException x) {
             x.printStackTrace();
         }
     }
 
-    public void delDistribution(Distribution dist)
+    public void delDistribution(int code)
     {
         try{
-            client.delDistribution(dist);
+            client.delDistribution(code);
         } catch (TException x) {
             x.printStackTrace();
         }
     }
 
-    public void delWriteoff(Writeoff wr)
+    public void delWriteoff(int code)
     {
         try{
-            client.delWriteoff(wr);
+            client.delWriteoff(code);
         } catch (TException x) {
             x.printStackTrace();
         }
