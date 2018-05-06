@@ -236,14 +236,14 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
         if (equipment.getCode() < 0)
             return;
 
-        if (equipment.getCategory() != "") {
+        if (!equipment.getCategory().isEmpty()) {
             String query = "update equipment set category = '" +
                     equipment.getCategory() + "' where code = " +
                     equipment.getCode() + ";";
             sendRequest(query);
         }
 
-        if (equipment.getName() != "") {
+        if (!equipment.getName().isEmpty()) {
             String query = "update equipment set name = '" +
                     equipment.getName() + "' where code = " +
                     equipment.getCode() + ";";
@@ -257,14 +257,14 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
             sendRequest(query);
         }
 
-        if (equipment.getProducer() != "") {
+        if (!equipment.getProducer().isEmpty()) {
             String query = "update equipment set producer = '" +
                     equipment.getProducer() + "' where code = " +
                     equipment.getCode() + ";";
             sendRequest(query);
         }
 
-        if (equipment.getReceiptDate() != "") {
+        if (!equipment.getReceiptDate().isEmpty()) {
             String query = "update equipment set receiptDate = '" +
                     equipment.getReceiptDate() + "' where code = " +
                     equipment.getCode() + ";";
@@ -277,7 +277,7 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
         if (cabinet.getCode() < 0)
             return;
 
-        if (cabinet.getName() != "") {
+        if (!cabinet.getName().isEmpty()) {
             String query = "update cabinet set name = '" +
                     cabinet.getName() + "' where code = " +
                     cabinet.getCode() + ";";
@@ -297,14 +297,14 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
         if (responsible.getCode() < 0)
             return;
 
-        if (responsible.getFio() != "") {
+        if (!responsible.getFio().isEmpty()) {
             String query = "update responsible set fio = '" +
                     responsible.getFio() + "' where code = " +
                     responsible.getCode() + ";";
             sendRequest(query);
         }
 
-        if (responsible.getPhone() != "") {
+        if (!responsible.getPhone().isEmpty()) {
             String query = "update responsible set phone = '" +
                     responsible.getPhone() + "' where code = " +
                     responsible.getCode() + ";";
@@ -338,7 +338,7 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
             sendRequest(query);
         }
 
-        if (distribution.getDate() != "") {
+        if (!distribution.getDate().isEmpty()) {
             String query = "update distribution set date = '" +
                     distribution.getDate() + "' where code = " +
                     distribution.getCode() + ";";
@@ -372,14 +372,14 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
             sendRequest(query);
         }
 
-        if (writeoff.getDate() != "") {
+        if (!writeoff.getDate().isEmpty()) {
             String query = "update writeoff set date = '" +
                     writeoff.getDate() + "' where code = " +
                     writeoff.getCode() + ";";
             sendRequest(query);
         }
 
-        if (writeoff.getCause() != "") {
+        if (!writeoff.getCause().isEmpty()) {
             String query = "update writeoff set cause = '" +
                     writeoff.getCause() + "' where code = " +
                     writeoff.getCode() + ";";

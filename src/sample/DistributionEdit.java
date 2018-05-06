@@ -15,6 +15,12 @@ public class DistributionEdit {
 
     public TextField codeDel;
 
+    public TextField codeEdit;
+    public TextField codeCabinetEdit;
+    public TextField codeEquipmentEdit;
+    public TextField numberEdit;
+    public TextField dateEdit;
+
     private Client client;
 
     @FXML
@@ -23,13 +29,13 @@ public class DistributionEdit {
     }
 
     public void Add(ActionEvent actionEvent) {
-        String code = codeAdd.getText();
-        String codeCabinet = codeCabinetAdd.getText();
-        String codeEquipment = codeEquipmentAdd.getText();
-        String number = numberAdd.getText();
+        int code = Integer.parseInt(codeAdd.getText());
+        int codeCabinet = Integer.parseInt(codeCabinetAdd.getText());
+        int codeEquipment = Integer.parseInt(codeEquipmentAdd.getText());
+        int number = Integer.parseInt(numberAdd.getText());
         String date = dateAdd.getText();
 
-        Distribution dist = new Distribution(Integer.parseInt(code), Integer.parseInt(codeCabinet),Integer.parseInt(codeEquipment),Integer.parseInt(number), date);
+        Distribution dist = new Distribution(code, codeCabinet, codeEquipment, number, date);
         client.addDistribution(dist);
     }
 
@@ -38,6 +44,22 @@ public class DistributionEdit {
     }
 
     public void Edit(ActionEvent actionEvent) {
+        int code = -1;
+        if (!codeEdit.getText().isEmpty())
+            code = Integer.parseInt(codeEdit.getText());
+        int codeCabinet = -1;
+        if (!codeCabinetEdit.getText().isEmpty())
+            codeCabinet = Integer.parseInt(codeCabinetEdit.getText());
+        int codeEquipment = -1;
+        if (!codeEquipmentEdit.getText().isEmpty())
+            codeEquipment = Integer.parseInt(codeEquipmentEdit.getText());
+        int number = -1;
+        if (!numberEdit.getText().isEmpty())
+            number = Integer.parseInt(numberEdit.getText());
+        String date = dateEdit.getText();
+
+        Distribution dist = new Distribution(code, codeCabinet, codeEquipment, number, date);
+        client.editDistribution(dist);
     }
 
     public void setClient(Client cl){

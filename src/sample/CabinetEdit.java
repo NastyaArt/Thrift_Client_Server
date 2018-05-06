@@ -13,6 +13,10 @@ public class CabinetEdit {
 
     public TextField codeDel;
 
+    public TextField codeEdit;
+    public TextField nameEdit;
+    public TextField codeResponsibleEdit;
+
     private Client client;
 
     @FXML
@@ -33,6 +37,16 @@ public class CabinetEdit {
     }
 
     public void Edit(ActionEvent actionEvent) {
+        int code = -1;
+        if (!codeEdit.getText().isEmpty())
+            code = Integer.parseInt(codeEdit.getText());
+        String name = nameEdit.getText();
+        int codeResponsible = -1;
+        if (!codeEdit.getText().isEmpty())
+            codeResponsible = Integer.parseInt(codeResponsibleEdit.getText());
+
+        Cabinet cab = new Cabinet(code, name, codeResponsible);
+        client.editCabinet(cab);
     }
 
     public void setClient(Client cl){

@@ -16,6 +16,13 @@ public class WriteoffEdit {
 
     public TextField codeDel;
 
+    public TextField codeEdit;
+    public TextField codeCabinetEdit;
+    public TextField codeEquipmentEdit;
+    public TextField numberEdit;
+    public TextField dateEdit;
+    public TextField causeEdit;
+
     private Client client;
 
     @FXML
@@ -40,6 +47,23 @@ public class WriteoffEdit {
     }
 
     public void Edit(ActionEvent actionEvent) {
+        int code = -1;
+        if (!codeEdit.getText().isEmpty())
+            code = Integer.parseInt(codeEdit.getText());
+        int codeCabinet = -1;
+        if (!codeCabinetEdit.getText().isEmpty())
+            codeCabinet = Integer.parseInt(codeCabinetEdit.getText());
+        int codeEquipment = -1;
+        if (!codeEquipmentEdit.getText().isEmpty())
+            codeEquipment = Integer.parseInt(codeEquipmentEdit.getText());
+        int number = -1;
+        if (!numberEdit.getText().isEmpty())
+            number = Integer.parseInt(numberEdit.getText());
+        String date = dateEdit.getText();
+        String cause = causeEdit.getText();
+
+        Writeoff wr = new Writeoff(code, codeCabinet, codeEquipment, number, date, cause);
+        client.editWriteoff(wr);
     }
 
     public void setClient(Client cl){

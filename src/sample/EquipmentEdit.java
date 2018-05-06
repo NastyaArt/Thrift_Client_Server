@@ -48,13 +48,13 @@ public class EquipmentEdit {
 
     public void Edit(ActionEvent actionEvent) {
         int code = -1;
-        if (codeEdit.getText()!= "") {
+        if (!codeEdit.getText().isEmpty()) {
             code = Integer.parseInt(codeEdit.getText());
         }
         String category = categoryEdit.getText();
         String name = nameEdit.getText();
         int cost = -1;
-        if (costEdit.getText()!= "") {
+        if (!costEdit.getText().isEmpty()) {
              cost = Integer.parseInt(costEdit.getText());
         }
         String producer = producerEdit.getText();

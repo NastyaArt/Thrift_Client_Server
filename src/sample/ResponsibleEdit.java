@@ -13,6 +13,10 @@ public class ResponsibleEdit {
 
     public TextField codeDel;
 
+    public TextField codeEdit;
+    public TextField fioEdit;
+    public TextField phoneEdit;
+
     private Client client;
 
     @FXML
@@ -34,6 +38,14 @@ public class ResponsibleEdit {
     }
 
     public void Edit(ActionEvent actionEvent) {
+        int code = -1;
+        if (!codeEdit.getText().isEmpty())
+            code = Integer.parseInt(codeEdit.getText());
+        String fio = fioEdit.getText();
+        String phone = phoneEdit.getText();
+
+        Responsible resp = new Responsible(code, fio, phone);
+        client.editResponsible(resp);
     }
 
     public void setClient(Client cl){
