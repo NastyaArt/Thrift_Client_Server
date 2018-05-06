@@ -21,10 +21,10 @@ public class CabinetEdit {
     }
 
     public void Add(ActionEvent actionEvent) {
-        String code = codeAdd.getText();
+        int code = Integer.parseInt(codeAdd.getText());
         String name = nameAdd.getText();
-        String codeResponsible = codeResponsibleAdd.getText();
-        Cabinet cab = new Cabinet(Integer.parseInt(code), name, Integer.parseInt(codeResponsible));
+        int codeResponsible = Integer.parseInt(codeResponsibleAdd.getText());
+        Cabinet cab = new Cabinet(code, name, codeResponsible);
         client.addCabinet(cab);
     }
 

@@ -21,23 +21,23 @@
                 </HBox>
                 <HBox spacing="10">
                     <Label text="Code Cabinet:"/>
-                    <TextField fx:id="codeCabinetAdd" text="Категория №2"/>
+                    <TextField fx:id="codeCabinetAdd" text="101"/>
                 </HBox>
                 <HBox spacing="5">
                     <Label text="Code Equipment:"/>
-                    <TextField fx:id="codeEquipmentAdd" text="Техника №3"/>
+                    <TextField fx:id="codeEquipmentAdd" text="6"/>
                 </HBox>
                 <HBox spacing="5">
                     <Label text="Number"/>
-                    <TextField fx:id="numberAdd" text="1470"/>
+                    <TextField fx:id="numberAdd" text="1"/>
                 </HBox>
                 <HBox spacing="5">
                     <Label text="Date:"/>
-                    <TextField fx:id="dateAdd" text="Производитель №4"/>
+                    <TextField fx:id="dateAdd" text="2018-03-01"/>
                 </HBox>
                 <HBox spacing="5">
                     <Label text="Cause:"/>
-                    <TextField fx:id="causeAdd" text="Производитель №4"/>
+                    <TextField fx:id="causeAdd" text="Неисправность"/>
                 </HBox>
                 <Button text="Add" fx:id="btnAdd" onAction="#Add"/>
             </VBox>
@@ -46,7 +46,7 @@
             <VBox spacing="5">
                 <HBox spacing="5">
                     <Label text="Code:"/>
-                    <TextField fx:id="codeDel" text="11"/>
+                    <TextField fx:id="codeDel" text="6"/>
                 </HBox>
                 <Button text="Delete" fx:id="btnDel" onAction="#Delete"/>
             </VBox>
@@ -55,27 +55,27 @@
             <VBox spacing="5">
                 <HBox spacing="5">
                     <Label text="Code:"/>
-                    <TextField fx:id="codeEdit" text="11"/>
+                    <TextField fx:id="codeEdit" text="6"/>
                 </HBox>
                 <HBox spacing="10">
                     <Label text="Code Cabinet:"/>
-                    <TextField fx:id="codeCabinetEdit" text="Категория №2" />
+                    <TextField fx:id="codeCabinetEdit"/>
                 </HBox>
                 <HBox spacing="5">
                     <Label text="Code Equipment:"/>
-                    <TextField fx:id="codeEquipmentEdit" text="Техника №3"/>
+                    <TextField fx:id="codeEquipmentEdit"/>
                 </HBox>
                 <HBox spacing="5">
                     <Label text="Number"/>
-                    <TextField fx:id="numberEdit" text="1470"/>
+                    <TextField fx:id="numberEdit"/>
                 </HBox>
                 <HBox spacing="5">
                     <Label text="Date:"/>
-                    <TextField fx:id="dateEdit" text="Производитель №4"/>
+                    <TextField fx:id="dateEdit"/>
                 </HBox>
                 <HBox spacing="5">
                     <Label text="Cause:"/>
-                    <TextField fx:id="causeEdit" text="Производитель №4"/>
+                    <TextField fx:id="causeEdit"  text="Поломка"/>
                 </HBox>
                 <Button text="Edit" fx:id="btnEdit" onAction="#Edit"/>
             </VBox>

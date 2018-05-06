@@ -24,14 +24,14 @@ public class WriteoffEdit {
     }
 
     public void Add(ActionEvent actionEvent) {
-        String code = codeAdd.getText();
-        String codeCabinet = codeCabinetAdd.getText();
-        String codeEquipment = codeEquipmentAdd.getText();
-        String number = numberAdd.getText();
+        int code = Integer.parseInt(codeAdd.getText());
+        int codeCabinet = Integer.parseInt(codeCabinetAdd.getText());
+        int codeEquipment = Integer.parseInt(codeEquipmentAdd.getText());
+        int number = Integer.parseInt(numberAdd.getText());
         String date = dateAdd.getText();
         String cause = causeAdd.getText();
 
-        Writeoff wr = new Writeoff(Integer.parseInt(code), Integer.parseInt(codeCabinet),Integer.parseInt(codeEquipment),Integer.parseInt(number), date, cause);
+        Writeoff wr = new Writeoff(code, codeCabinet, codeEquipment, number, date, cause);
         client.addWriteoff(wr);
     }
 

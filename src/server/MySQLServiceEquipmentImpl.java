@@ -233,22 +233,158 @@ public class MySQLServiceEquipmentImpl implements MySQLServiceEquipment.Iface {
 
     @Override
     public void editEquipment(Equipment equipment) throws TException {
+        if (equipment.getCode() < 0)
+            return;
+
+        if (equipment.getCategory() != "") {
+            String query = "update equipment set category = '" +
+                    equipment.getCategory() + "' where code = " +
+                    equipment.getCode() + ";";
+            sendRequest(query);
+        }
+
+        if (equipment.getName() != "") {
+            String query = "update equipment set name = '" +
+                    equipment.getName() + "' where code = " +
+                    equipment.getCode() + ";";
+            sendRequest(query);
+        }
+
+        if (equipment.getCost() > 0) {
+            String query = "update equipment set cost = '" +
+                    equipment.getCost() + "' where code = " +
+                    equipment.getCode() + ";";
+            sendRequest(query);
+        }
+
+        if (equipment.getProducer() != "") {
+            String query = "update equipment set producer = '" +
+                    equipment.getProducer() + "' where code = " +
+                    equipment.getCode() + ";";
+            sendRequest(query);
+        }
+
+        if (equipment.getReceiptDate() != "") {
+            String query = "update equipment set receiptDate = '" +
+                    equipment.getReceiptDate() + "' where code = " +
+                    equipment.getCode() + ";";
+            sendRequest(query);
+        }
     }
 
     @Override
     public void editCabinet(Cabinet cabinet) throws TException {
+        if (cabinet.getCode() < 0)
+            return;
+
+        if (cabinet.getName() != "") {
+            String query = "update cabinet set name = '" +
+                    cabinet.getName() + "' where code = " +
+                    cabinet.getCode() + ";";
+            sendRequest(query);
+        }
+
+        if (cabinet.getCodeResponsible() > 0) {
+            String query = "update cabinet set codeResponsible = '" +
+                    cabinet.getCodeResponsible() + "' where code = " +
+                    cabinet.getCode() + ";";
+            sendRequest(query);
+        }
     }
 
     @Override
     public void editResponsible(Responsible responsible) throws TException {
+        if (responsible.getCode() < 0)
+            return;
+
+        if (responsible.getFio() != "") {
+            String query = "update responsible set fio = '" +
+                    responsible.getFio() + "' where code = " +
+                    responsible.getCode() + ";";
+            sendRequest(query);
+        }
+
+        if (responsible.getPhone() != "") {
+            String query = "update responsible set phone = '" +
+                    responsible.getPhone() + "' where code = " +
+                    responsible.getCode() + ";";
+            sendRequest(query);
+        }
     }
 
     @Override
     public void editDistribution(Distribution distribution) throws TException {
+        if (distribution.getCode() < 0)
+            return;
+
+        if (distribution.getCodeCabinet() > 0) {
+            String query = "update distribution set codeCabinet = '" +
+                    distribution.getCodeCabinet() + "' where code = " +
+                    distribution.getCode() + ";";
+            sendRequest(query);
+        }
+
+        if (distribution.getCodeEquipment() > 0) {
+            String query = "update distribution set codeEquipment = '" +
+                    distribution.getCodeEquipment() + "' where code = " +
+                    distribution.getCode() + ";";
+            sendRequest(query);
+        }
+
+        if (distribution.getNumber() > 0) {
+            String query = "update distribution set number = '" +
+                    distribution.getNumber() + "' where code = " +
+                    distribution.getCode() + ";";
+            sendRequest(query);
+        }
+
+        if (distribution.getDate() != "") {
+            String query = "update distribution set date = '" +
+                    distribution.getDate() + "' where code = " +
+                    distribution.getCode() + ";";
+            sendRequest(query);
+        }
     }
 
     @Override
     public void editWriteoff(Writeoff writeoff) throws TException {
+        if (writeoff.getCode() < 0)
+            return;
+
+        if (writeoff.getCodeCabinet() > 0) {
+            String query = "update writeoff set codeCabinet = '" +
+                    writeoff.getCodeCabinet() + "' where code = " +
+                    writeoff.getCode() + ";";
+            sendRequest(query);
+        }
+
+        if (writeoff.getCodeEquipment() > 0) {
+            String query = "update writeoff set codeEquipment = '" +
+                    writeoff.getCodeEquipment() + "' where code = " +
+                    writeoff.getCode() + ";";
+            sendRequest(query);
+        }
+
+        if (writeoff.getNumber() > 0) {
+            String query = "update writeoff set number = '" +
+                    writeoff.getNumber() + "' where code = " +
+                    writeoff.getCode() + ";";
+            sendRequest(query);
+        }
+
+        if (writeoff.getDate() != "") {
+            String query = "update writeoff set date = '" +
+                    writeoff.getDate() + "' where code = " +
+                    writeoff.getCode() + ";";
+            sendRequest(query);
+        }
+
+        if (writeoff.getCause() != "") {
+            String query = "update writeoff set cause = '" +
+                    writeoff.getCause() + "' where code = " +
+                    writeoff.getCode() + ";";
+            sendRequest(query);
+        }
     }
 
     private void sendSelectRequest(String query) {

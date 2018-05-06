@@ -180,7 +180,7 @@ public class Client {
     public void editEquipment(Equipment eq)
     {
         try{
-            client.addEquipment(eq);
+            client.editEquipment(eq);
         } catch (TException x) {
             x.printStackTrace();
         }
@@ -189,7 +189,7 @@ public class Client {
     public void editCabinet(Cabinet cab)
     {
         try{
-            client.addCabinet(cab);
+            client.editCabinet(cab);
         } catch (TException x) {
             x.printStackTrace();
         }
@@ -198,7 +198,7 @@ public class Client {
     public void editResponsible(Responsible resp)
     {
         try{
-            client.addResponsible(resp);
+            client.editResponsible(resp);
         } catch (TException x) {
             x.printStackTrace();
         }
@@ -207,7 +207,7 @@ public class Client {
     public void editDistribution(Distribution dist)
     {
         try{
-            client.addDistribution(dist);
+            client.editDistribution(dist);
         } catch (TException x) {
             x.printStackTrace();
         }
@@ -216,7 +216,7 @@ public class Client {
     public void editWriteoff(Writeoff wr)
     {
         try{
-            client.addWriteoff(wr);
+            client.editWriteoff(wr);
         } catch (TException x) {
             x.printStackTrace();
         }

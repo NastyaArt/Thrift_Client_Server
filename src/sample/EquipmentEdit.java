@@ -16,6 +16,13 @@ public class EquipmentEdit {
 
     public TextField codeDel;
 
+    public TextField codeEdit;
+    public TextField categoryEdit;
+    public TextField nameEdit;
+    public TextField costEdit;
+    public TextField producerEdit;
+    public TextField receiptDateEdit;
+
     private Client client;
 
     @FXML
@@ -24,14 +31,14 @@ public class EquipmentEdit {
     }
 
     public void Add(ActionEvent actionEvent) {
-        String code = codeAdd.getText();
+        int code = Integer.parseInt(codeAdd.getText());
         String category = categoryAdd.getText();
         String name = nameAdd.getText();
-        String cost = costAdd.getText();
+        int cost = Integer.parseInt(costAdd.getText());
         String producer = producerAdd.getText();
         String receiptDate = receiptDateAdd.getText();
 
-        Equipment eq = new Equipment(Integer.parseInt(code), category, name, Integer.parseInt(cost), producer, receiptDate);
+        Equipment eq = new Equipment(code, category, name, cost, producer, receiptDate);
         client.addEquipment(eq);
     }
 
@@ -40,6 +47,21 @@ public class EquipmentEdit {
     }
 
     public void Edit(ActionEvent actionEvent) {
+        int code = -1;
+        if (codeEdit.getText()!= "") {
+            code = Integer.parseInt(codeEdit.getText());
+        }
+        String category = categoryEdit.getText();
+        String name = nameEdit.getText();
+        int cost = -1;
+        if (costEdit.getText()!= "") {
+             cost = Integer.parseInt(costEdit.getText());
+        }
+        String producer = producerEdit.getText();
+        String receiptDate = receiptDateEdit.getText();
+
+        Equipment eq = new Equipment(code, category, name, cost, producer, receiptDate);
+        client.editEquipment(eq);
     }
 
     public void setClient(Client cl){

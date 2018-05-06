@@ -21,11 +21,11 @@ public class ResponsibleEdit {
     }
 
     public void Add(ActionEvent actionEvent) {
-        String code = codeAdd.getText();
+        int code = Integer.parseInt(codeAdd.getText());
         String fio = fioAdd.getText();
         String phone = phoneAdd.getText();
 
-        Responsible resp = new Responsible(Integer.parseInt(code), fio, phone);
+        Responsible resp = new Responsible(code, fio, phone);
         client.addResponsible(resp);
     }
 
